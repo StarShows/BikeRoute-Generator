@@ -1,4 +1,5 @@
 import gpxpy
+import os
 import gpxpy.gpx
 
 # Create a new GPX file
@@ -28,7 +29,12 @@ end = gpxpy.gpx.GPXTrackPoint(32.7087, -116.7645, name="End: Lyons Valley Tradin
 gpx_segment.points.append(end)
 
 # Write the GPX file to disk
-with open("great_western_loop_fixed.gpx", "w") as f:
+# Ensure the directory exists
+output_dir = "Output_GPX"
+os.makedirs(output_dir, exist_ok=True)
+
+# Write the GPX file to the specified directory
+with open(os.path.join(output_dir, "great_western_loop_fixed.gpx"), "w") as f:
     f.write(gpx.to_xml())
 
 print("GPX file created successfully.")
