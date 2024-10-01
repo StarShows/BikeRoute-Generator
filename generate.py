@@ -1,5 +1,6 @@
 import gpxpy
 import os
+import re
 import gpxpy.gpx
 
 # Create a new GPX file
@@ -34,7 +35,18 @@ output_dir = "Output_GPX"
 os.makedirs(output_dir, exist_ok=True)
 
 # Write the GPX file to the specified directory
-with open(os.path.join(output_dir, "great_western_loop_fixed.gpx"), "w") as f:
+# Prompt the user for the file name
+def to_snake_case(name):
+    # Remove special characters and replace spaces with underscores
+    name = re.sub(r'[^a-zA-Z0-9\s]', '', name)
+    name = re.sub(r'\s+', '_', name)
+    return name.lower()
+
+file_name_input = input("Enter the name for the GPX file (without extension): ")
+file_name = to_snake_case(file_name_input) + ".gpx"
+
+# Write the GPX file to the specified directory
+with open(os.path.join(output_dir, file_name), "w") as f:
     f.write(gpx.to_xml())
 
 print("GPX file created successfully.")
