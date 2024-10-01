@@ -28,8 +28,7 @@ Designed and Developed by Alex Tannenbaum, 2024.
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/bike-route-to-gpx.git
-   cd bike-route-to-gpx
+   git clone https://github.com/StarShows/BikeRoute-Generator.git
    ```
 
 2. **Create a virtual environment:**
@@ -50,13 +49,13 @@ Designed and Developed by Alex Tannenbaum, 2024.
 1. **Run the script:**
 
    ```bash
-   python generate_gpx.py --input route_data.json --output my_route.gpx
+   python generate.py
    ```
 
 2. **Arguments:**
 
-   - `--input`: Specifies the input JSON file containing the route data (e.g., `route_data.json`).
-   - `--output`: Specifies the desired GPX file name for the generated route (e.g., `my_route.gpx`).
+   - `--input`: Specifies the input JSON file containing the route data (e.g., `/input/route_data.json`).
+   - `--output`: Specifies the desired GPX file name for the generated route (e.g., `output_GPX/route_name.gpx`).
 
 ## Input Format
 
@@ -99,7 +98,7 @@ To generate a GPX file from a sample route data:
 2. Run the script:
 
     ```bash
-    python generate_gpx.py --input route_data.json --output santa_monica_to_malibu.gpx
+    python generate.py --input route_data.json --output santa_monica_to_malibu.gpx
     ```
 
 ## GPX Output Format
