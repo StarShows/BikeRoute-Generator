@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <trk>
+    <trkseg>
+      <trkpt lat="32.7087" lon="-116.7645">
+        <name>Start: Lyons Valley Trading Post (Parking)</name>
+      </trkpt>
+      <trkpt lat="32.8083" lon="-116.7755">
+        <name>Rest Stop: Dehesa Rd</name>
+      </trkpt>
+      <trkpt lat="32.8146" lon="-116.6987">
+        <name>Rest Stop: Japatul Valley Rd</name>
+      </trkpt>
+      <trkpt lat="32.7087" lon="-116.7645">
+        <name>End: Lyons Valley Trading Post (Parking)</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
